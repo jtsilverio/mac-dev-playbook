@@ -41,7 +41,6 @@ homebrew_installed_packages:
   - pipx
   - uv
   - r
-  - qgis-plugin-grass
 
 homebrew_taps: []
 
