@@ -1,8 +1,8 @@
 .PHONY: run
 run:
-	sudo ansible-galaxy collection install -r requirements.yml
-	sudo ansible-playbook main.yml --ask-become-pass
+	ansible-galaxy install -r requirements.yml
+	ansible-playbook main.yml --ask-become-pass
 
 dry-run:
-	sudo ansible-galaxy collection install -r requirements.yml
-	sudo ansible-playbook main.yml --ask-become-pass --check
+	ansible-galaxy install -r requirements.yml
+	ansible-playbook main.yml --ask-become-pass --check

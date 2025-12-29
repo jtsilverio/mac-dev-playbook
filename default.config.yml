@@ -22,7 +22,6 @@ dotfiles_files:
   - .osx
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
   - git
   - gh
   - gpg
