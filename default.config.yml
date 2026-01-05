@@ -49,12 +49,14 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - 1password
+  - alacritty
   - bitwarden
   - firefox
   - google-chrome
   - slack
   - visual-studio-code
   - qgis
+  - raycast
   - rectangle
   - rstudio
   - postman
