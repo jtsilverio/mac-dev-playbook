@@ -6,7 +6,7 @@ configure_ohmyzsh: true
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockitems_remove: ["Launchpad", "TV", "Podcasts", "App Store", "Reminders", "Notes", "Freeform", "Siri", "Music", "Facetime", "Photos", "Messages", "Mail"]
-dockitems_persist: ["Firefox", "Visual Studio Code", "Terminal"]
+dockitems_persist: ["Firefox", "Visual Studio Code", "Ghostty"]
 # - name: "Sublime Text"
 #   path: "/Applications/Sublime Text.app/"
 #   pos: 5
@@ -66,6 +66,7 @@ homebrew_cask_apps:
   - betterdisplay
   - zotero
   - scroll-reverser
+  - ghostty
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
