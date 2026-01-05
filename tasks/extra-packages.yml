@@ -1,6 +1,13 @@
 ---
+- name: Ensure pipx is set up.
+  command: pipx ensurepath
+  changed_when: false
+
 - name: Install global Python packages using pipx.
-  community.general.pipx:
-    name: "{{ item.name | default(item) }}"
-    state: "{{ item.state | default('present') }}"
+  command: "pipx install {{ item.name | default(item) }}"
   loop: "{{ pip_packages }}"
+  register: pipx_result
+  changed_when: "'installed package' in pipx_result.stdout"
+  failed_when: 
+    - pipx_result.rc != 0
+    - "'already installed' not in pipx_result.stderr"
