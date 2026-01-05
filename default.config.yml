@@ -52,6 +52,8 @@ homebrew_cask_apps:
   - alacritty
   - bitwarden
   - firefox
+  - font-iosevka-nerd-font
+  - font-jetbrains-mono-nerd-font
   - google-chrome
   - slack
   - visual-studio-code
