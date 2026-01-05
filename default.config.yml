@@ -42,6 +42,7 @@ homebrew_installed_packages:
   - uv
   - r
   - neovim
+  - dockutil
 
 homebrew_taps: []
 
