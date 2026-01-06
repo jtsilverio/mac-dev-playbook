@@ -46,7 +46,9 @@ homebrew_installed_packages:
   - neovim
   - dockutil
 
-homebrew_taps: []
+homebrew_taps:
+  - name: montanaflynn/EthernetConnectionStatus
+    url: https://github.com/montanaflynn/EthernetConnectionStatus
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_accept_external_apps: true
@@ -67,8 +69,12 @@ homebrew_cask_apps:
   - postman
   - betterdisplay
   - zotero
+<<<<<<< Updated upstream
   - scroll-reverser
   - ghostty
+=======
+  - ethernet-connection-status
+>>>>>>> Stashed changes
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
