@@ -69,12 +69,11 @@ homebrew_cask_apps:
   - postman
   - betterdisplay
   - zotero
-<<<<<<< Updated upstream
   - scroll-reverser
   - ghostty
-=======
-  - ethernet-connection-status
->>>>>>> Stashed changes
+  - awscli
+
+
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
