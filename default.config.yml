@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - r
   - neovim
   - dockutil
+  - kubectl
 
 homebrew_taps:
   - name: montanaflynn/EthernetConnectionStatus
