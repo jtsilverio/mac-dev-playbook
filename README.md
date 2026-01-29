@@ -94,50 +94,84 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 
 Applications (installed with Homebrew Cask):
 
-  - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
-  - [Docker](https://www.docker.com/)
-  - [Dropbox](https://www.dropbox.com/)
+  - [1Password](https://1password.com/)
+  - [Alacritty](https://alacritty.org/)
+  - [AWS CLI](https://aws.amazon.com/cli/)
+  - [BetterDisplay](https://github.com/waydabber/BetterDisplay)
+  - [Bitwarden](https://bitwarden.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+  - [Ghostty](https://ghostty.org/)
   - [Google Chrome](https://www.google.com/chrome/)
-  - [Handbrake](https://handbrake.fr/)
-  - [Homebrew](http://brew.sh/)
-  - [LICEcap](http://www.cockos.com/licecap/)
-  - [nvALT](http://brettterpstra.com/projects/nvalt/)
-  - [Sequel Ace](https://sequel-ace.com) (MySQL client)
+  - [Iosevka Nerd Font](https://www.nerdfonts.com/)
+  - [JetBrains Mono Nerd Font](https://www.nerdfonts.com/)
+  - [Postman](https://www.postman.com/)
+  - [QGIS](https://qgis.org/)
+  - [Raycast](https://www.raycast.com/)
+  - [Rectangle](https://rectangleapp.com/)
+  - [RStudio](https://posit.co/products/open-source/rstudio/)
+  - [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
   - [Slack](https://slack.com/)
-  - [Sublime Text](https://www.sublimetext.com/)
-  - [Transmit](https://panic.com/transmit/) (S/FTP client)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [Zotero](https://www.zotero.org/)
 
 Packages (installed with Homebrew):
 
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
+  - dockutil
   - gh
-  - go
+  - git
   - gpg
   - httpie
   - iperf
+  - kubectl
   - libevent
-  - sqlite
+  - neovim
   - nmap
   - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - readline
   - openssl
+  - pipx
+  - pngpaste
   - pv
+  - r
+  - readline
+  - sqlite
+  - uv
   - wget
   - wrk
+  - zsh-autosuggestions
   - zsh-history-substring-search
+  - zsh-syntax-highlighting
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+Python packages (installed with pipx):
 
-Finally, there are a few other preferences and settings added on for various apps and services.
+  - cookiecutter
+  - dvc[s3]
+  - locust
+  - mlflow
+  - poetry
+  - poethepoet
+
+Dotfiles:
+
+My [dotfiles](https://github.com/jtsilverio/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. The following dotfiles are installed:
+
+  - `.gitconfig` - Git configuration
+  - `.gitignore` - Global Git ignore patterns
+  - `.osx` - macOS system preferences and settings
+
+You can disable dotfiles management by setting `configure_dotfiles: false` in your configuration.
+
+Shell Configuration:
+
+  - **Oh My Zsh** is installed and configured
+  - Zsh plugins for enhanced command-line experience (autosuggestions, syntax highlighting, history substring search)
+
+Dock Configuration:
+
+The Dock is automatically configured to remove unwanted default applications and add preferred ones:
+  - **Removed**: Launchpad, TV, Podcasts, App Store, Reminders, Notes, Freeform, Siri, Music, Facetime, Photos, Messages, Mail
+  - **Added**: Firefox, Visual Studio Code, Ghostty
+
+You can customize Dock configuration by setting `configure_dock: false` or modifying `dockitems_remove` and `dockitems_persist` in your configuration.
 
 ## Full / From-scratch setup guide
 
