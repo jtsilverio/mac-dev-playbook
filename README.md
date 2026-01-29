@@ -96,59 +96,59 @@ Applications (installed with Homebrew Cask):
 
   - [1Password](https://1password.com/)
   - [Alacritty](https://alacritty.org/)
-  - [AWS CLI](https://aws.amazon.com/cli/)
-  - [BetterDisplay](https://github.com/waydabber/BetterDisplay)
   - [Bitwarden](https://bitwarden.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-  - [Ghostty](https://ghostty.org/)
-  - [Google Chrome](https://www.google.com/chrome/)
   - [Iosevka Nerd Font](https://www.nerdfonts.com/)
   - [JetBrains Mono Nerd Font](https://www.nerdfonts.com/)
-  - [Postman](https://www.postman.com/)
+  - [Google Chrome](https://www.google.com/chrome/)
+  - [Slack](https://slack.com/)
+  - [Visual Studio Code](https://code.visualstudio.com/)
   - [QGIS](https://qgis.org/)
   - [Raycast](https://www.raycast.com/)
   - [Rectangle](https://rectangleapp.com/)
   - [RStudio](https://posit.co/products/open-source/rstudio/)
-  - [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
-  - [Slack](https://slack.com/)
-  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [Postman](https://www.postman.com/)
+  - [BetterDisplay](https://github.com/waydabber/BetterDisplay)
   - [Zotero](https://www.zotero.org/)
+  - [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
+  - [Ghostty](https://ghostty.org/)
+  - [AWS CLI](https://aws.amazon.com/cli/)
 
 Packages (installed with Homebrew):
 
-  - dockutil
-  - gh
   - git
+  - gh
   - gpg
   - httpie
   - iperf
-  - kubectl
   - libevent
-  - neovim
+  - sqlite
   - nmap
   - node
-  - openssl
-  - pipx
   - pngpaste
-  - pv
-  - r
   - readline
-  - sqlite
-  - uv
+  - openssl
+  - pv
   - wget
   - wrk
-  - zsh-autosuggestions
   - zsh-history-substring-search
+  - zsh-autosuggestions
   - zsh-syntax-highlighting
+  - pipx
+  - uv
+  - r
+  - neovim
+  - dockutil
+  - kubectl
 
 Python packages (installed with pipx):
 
-  - cookiecutter
-  - dvc[s3]
-  - locust
   - mlflow
-  - poetry
+  - dvc[s3]
+  - cookiecutter
+  - locust
   - poethepoet
+  - poetry
 
 Dotfiles:
 
@@ -171,7 +171,7 @@ The Dock is automatically configured to remove unwanted default applications and
   - **Removed**: Launchpad, TV, Podcasts, App Store, Reminders, Notes, Freeform, Siri, Music, Facetime, Photos, Messages, Mail
   - **Added**: Firefox, Visual Studio Code, Ghostty
 
-You can customize Dock configuration by setting `configure_dock: false` or modifying `dockitems_remove` and `dockitems_persist` in your configuration.
+You can disable Dock configuration by setting `configure_dock: false` or customize it by modifying `dockitems_remove` and `dockitems_persist` in your configuration.
 
 ## Full / From-scratch setup guide
 
