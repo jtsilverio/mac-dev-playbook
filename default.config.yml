@@ -1,5 +1,4 @@
 ---
-configure_dotfiles: true
 configure_osx: true
 configure_ohmyzsh: true
 configure_starship: true
@@ -12,16 +11,6 @@ dockitems_persist: ["Firefox", "Visual Studio Code", "Ghostty"]
 # - name: "Sublime Text"
 #   path: "/Applications/Sublime Text.app/"
 #   pos: 5
-
-
-dotfiles_repo: https://github.com/jtsilverio/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/code/dotfiles
-dotfiles_repo_version: main # Replace with your default branch
-dotfiles_files:
-  - .gitconfig
-  - .gitignore
-  - .osx
 
 homebrew_installed_packages:
   - git
@@ -47,12 +36,9 @@ homebrew_installed_packages:
   - neovim
   - dockutil
   - kubectl
+  - k9s
   - fzf
   - fd
-
-homebrew_taps:
-  - name: montanaflynn/EthernetConnectionStatus
-    url: https://github.com/montanaflynn/EthernetConnectionStatus
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_accept_external_apps: true
@@ -76,15 +62,9 @@ homebrew_cask_apps:
   - scroll-reverser
   - ghostty
   - awscli
-
-
-
-# See `geerlingguy.mac.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
-
-osx_script: "~/.osx --no-restart"
+  - bruno
+  - ticktick
+  - headlamp
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
