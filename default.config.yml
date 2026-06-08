@@ -56,7 +56,6 @@ homebrew_cask_apps:
   - raycast
   - rectangle
   - rstudio
-  - postman
   - betterdisplay
   - zotero
   - scroll-reverser
