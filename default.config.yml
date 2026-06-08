@@ -2,6 +2,8 @@
 configure_dotfiles: true
 configure_osx: true
 configure_ohmyzsh: true
+configure_starship: true
+configure_uv: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
@@ -41,11 +43,12 @@ homebrew_installed_packages:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - pipx
-  - uv
   - r
   - neovim
   - dockutil
   - kubectl
+  - fzf
+  - fd
 
 homebrew_taps:
   - name: montanaflynn/EthernetConnectionStatus
@@ -92,7 +95,6 @@ pip_packages:
   - cookiecutter
   - locust
   - poethepoet
-  - poetry
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A

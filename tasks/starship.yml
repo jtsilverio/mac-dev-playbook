@@ -1,0 +1,9 @@
+---
+- name: Check if Starship is installed.
+  stat:
+    path: /usr/local/bin/starship
+  register: starship_stat
+
+- name: Install Starship prompt.
+  shell: curl -sS https://starship.rs/install.sh | sh -s -- --yes
+  when: not starship_stat.stat.exists
