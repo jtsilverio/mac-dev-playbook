@@ -39,6 +39,9 @@ homebrew_installed_packages:
   - k9s
   - fzf
   - fd
+  - bat
+  - ripgrep
+  - jq
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_accept_external_apps: true
