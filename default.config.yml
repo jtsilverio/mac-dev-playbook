@@ -67,6 +67,7 @@ homebrew_cask_apps:
   - bruno
   - ticktick
   - headlamp
+  - zen
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
