@@ -21,8 +21,6 @@ homebrew_installed_packages:
   - libevent
   - sqlite
   - nmap
-  - node
-  - pngpaste
   - readline
   - openssl
   - pv
